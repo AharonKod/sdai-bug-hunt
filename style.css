@@ -1,38 +1,78 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #9dc070; /* Light green background color for the whole page */
+  color: #333; /* Dark text color for readability */
 }
 
+/* Header Styles */
 header {
-  background-color: #282c34;
-  color: white;
+  background-color: #9dc070; /* Dark background for header */
+  color: rgb(93, 211, 109);
   text-align: center;
   padding: 20px;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Large font size for header text */
+}
+
+/* Main Content Styles */
 main {
+  max-width: 900px; /* Constrain main content width */
+  margin: 20px auto; /* Center main content with margin */
   padding: 20px;
+  background-color: #9dc070; /* White background for the main content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Image Styles */
 img {
-  max-width: 100%;
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center image horizontally */
+  border-radius: 8px; /* Rounded corners for images */
 }
 
+/* List Styles */
 ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove default list styling */
   padding: 0;
+  margin: 0; /* Remove default margin */
 }
 
+li {
+  background-color: #b1ae12; /* White background for list items */
+  border: 1px solid #314872; /* Light border for list items */
+  padding: 15px;
+  margin-bottom: 10px; /* Space between list items */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+li:hover {
+  background-color: #254561; /* Light blue background on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Button Styles */
 button {
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #61dafb;
+  padding: 12px 24px;
+  background-color: #61dafb; /* Light blue background for button */
   border: none;
-  color: white;
+  color: rgb(87, 18, 66);
+  font-size: 1em;
   cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-  background-color: #21a1f1;
+  background-color: #21a1f1; /* Darker blue on hover */
 }
